@@ -164,7 +164,13 @@ sudo service nginx restart
 ### 9 Add domain in goDaddy.com
 If you have domain, you can add A record to your EC2 instance IP with a new subdomain as I'm going to show you next
 
+<img width="1337" height="566" alt="image" src="https://github.com/user-attachments/assets/9de93a08-8982-48ef-8ec2-17797efa1bc6" />
+
+<img width="1857" height="261" alt="image" src="https://github.com/user-attachments/assets/22cc0c8d-8b8d-4765-a91e-36aa45326062" />
+
 #### 9.1 Check that Port 80 redirect to Nodejs server
+
+<img width="1495" height="928" alt="image" src="https://github.com/user-attachments/assets/1d0e5289-abb8-4f71-9647-ccd4ed600bf9" />
 
 ### 10 Installing Free SSL
 
