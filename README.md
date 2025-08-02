@@ -156,6 +156,9 @@ sudo nginx -t
 sudo service nginx restart
 ```
 
+<img width="1266" height="876" alt="image" src="https://github.com/user-attachments/assets/a6844a4d-2250-41c2-92f1-e7df30349847" />
+
+
 #### You should now be able to visit your IP with no port (port 80) and see your app. Now let's add a domain
 
 ### 9 Add domain in goDaddy.com
