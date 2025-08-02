@@ -139,13 +139,12 @@ sudo nano /etc/nginx/sites-available/default
         proxy_cache_bypass $http_upgrade;
     }
 ```
-````
-<img width="1217" height="551" alt="image" src="https://github.com/user-attachments/assets/31487e75-7a05-4947-9917-91afcf674798" />
-````
 
-````
+<img width="1217" height="551" alt="image" src="https://github.com/user-attachments/assets/31487e75-7a05-4947-9917-91afcf674798" />
+
+
+
 <img width="890" height="428" alt="image" src="https://github.com/user-attachments/assets/e9a439ff-8961-458d-a079-6500afb06e29" />
-````
 
 ##### Check NGINX config
 ```sh
