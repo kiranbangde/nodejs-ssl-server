@@ -177,19 +177,11 @@ If you have domain, you can add A record to your EC2 instance IP with a new subd
 #### 10.1 Installing Certbot
 
 ```sh
-sudo snap install core; sudo snap refresh core
-```
+sudo apt install certbot python3-certbot-nginx -y
 
 ```sh
-sudo apt remove certbot
-```
+sudo certbot --nginx
 
-```sh
-sudo snap install --classic certbot
-```
-
-```sh
-sudo ln -s /snap/bin/certbot /usr/bin/certbot
 ```
 
 #### 10.2 Confirming Nginx’s Configuration
@@ -232,10 +224,18 @@ If you like Certbot, please consider supporting our work by:
 * Donating to ISRG / Let's Encrypt: https://letsencrypt.org/donate
 * Donating to EFF: https://eff.org/donate-le
 ```
+#### to check version of certificate 
+````
+certbot --version
+````
+#### Check existing SSL certificates
+````
+sudo certbot certificates
+````
 
 #### 10.4 Verifying Certbot Auto-Renewal
 ```sh
-sudo systemctl status snap.certbot.renew.service
+systemctl status certbot certificate
 ```
 Output:
 ```
@@ -253,7 +253,9 @@ sudo certbot renew --dry-run
 
 ### 11. Visit your website HTTPS://<your website>
   Enjoy Your free Nodejs server with Free SSL :)
-  
+
+  <img width="1496" height="857" alt="image" src="https://github.com/user-attachments/assets/d4f6154b-f9da-46ef-a803-da53505d7856" />
+
   
 ## Support 🙏😃
   
