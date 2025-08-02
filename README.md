@@ -195,6 +195,8 @@ let edit this line:
 server_name example.com www.example.com;
 ...
 ```
+<img width="1012" height="303" alt="image" src="https://github.com/user-attachments/assets/3260192f-6591-4ca6-baa0-ac3ce1699ee2" />
+
 
 ```sh
 sudo nginx -t
