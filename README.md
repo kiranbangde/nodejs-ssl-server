@@ -178,12 +178,7 @@ If you have domain, you can add A record to your EC2 instance IP with a new subd
 
 ```sh
 sudo apt install certbot python3-certbot-nginx -y
-
-```sh
-sudo certbot --nginx
-
-```
-
+````
 #### 10.2 Confirming Nginx’s Configuration
 ```sh
 sudo nano /etc/nginx/sites-available/default
@@ -192,24 +187,25 @@ sudo nano /etc/nginx/sites-available/default
 let edit this line:
 ```sh
 ...
-server_name example.com www.example.com;
+server_name  www.example.com;
 ...
 ```
 <img width="1012" height="303" alt="image" src="https://github.com/user-attachments/assets/3260192f-6591-4ca6-baa0-ac3ce1699ee2" />
 
-
-```sh
-sudo nginx -t
-```
-
-```sh
-sudo systemctl reload nginx
-```
-
+````
+nginx -t
+````
+````
+nginx reload
+````
 #### 10.3 Obtaining an FREE SSL Certificate
 ```sh
 sudo certbot --nginx -d app.example.com 
 ```
+#### verify certificate 
+````
+sudo certbot certificates
+````
 
 Output:
 ```
